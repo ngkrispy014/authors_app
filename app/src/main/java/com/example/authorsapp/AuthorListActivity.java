@@ -91,14 +91,6 @@ public class AuthorListActivity extends AppCompatActivity implements OnAuthorLis
 
                     if (listResource.data != null) {
                         switch (listResource.status) {
-                            case LOADING: {
-                                hideProgressView();
-
-//                                if (authorListViewModel.getPageNumber() > 1) {
-//                                } else {
-//                                }
-                                break;
-                            }
 
                             case ERROR: {
                                 Log.e(TAG, "onChanged: cannot refresh the cache.");

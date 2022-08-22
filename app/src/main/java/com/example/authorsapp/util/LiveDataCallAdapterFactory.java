@@ -44,7 +44,7 @@ public class LiveDataCallAdapterFactory extends CallAdapter.Factory {
 
         // Check #3
         // Check if ApiResponse is parameterized. AKA: Does ApiResponse<T> exists? (must wrap around T)
-        // FYI: T is List<AuthorModel>
+        // T is List<AuthorModel>
         if (!(observableType instanceof ParameterizedType)) {
             throw new IllegalArgumentException("resource must be parameterized");
         }

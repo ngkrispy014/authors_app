@@ -29,7 +29,7 @@ public abstract class NetworkBoundResource<CacheObject, RequestObject> {
     private void init(){
 
         // update LiveData for loading status
-        results.setValue((Resource<CacheObject>) Resource.loading(null));
+        results.setValue(Resource.loading(null));
 
         // observe LiveData source from local db
         final LiveData<CacheObject> dbSource = loadFromDb();

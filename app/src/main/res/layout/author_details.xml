@@ -5,16 +5,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:background="#80000000"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
 
         android:id="@+id/author_details_image"
@@ -30,11 +20,12 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/author_details_image"
         android:background="#80000000"
-        android:padding="30dp"
+        android:padding="50dp"
         android:text="I am a text"
         android:textAlignment="center"
+        android:fontFamily="@font/roboto_bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
 </RelativeLayout>

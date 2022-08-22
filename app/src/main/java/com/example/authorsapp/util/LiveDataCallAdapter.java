@@ -2,7 +2,6 @@ package com.example.authorsapp.util;
 import androidx.lifecycle.LiveData;
 
 import com.example.authorsapp.requests.responses.APIResponse;
-import java.io.IOException;
 import java.lang.reflect.Type;
 
 import retrofit2.Call;

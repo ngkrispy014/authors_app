@@ -44,18 +44,15 @@ public class AuthorListViewModel extends ViewModel {
                 pageNumber = 1;
             }
             this.pageNumber = pageNumber;
-            executeSearch();
+            executeGetAuthors();
     }
 
-    public int getPageNumber(){
-        return pageNumber;
-    }
     public void nextPage(){
             pageNumber++;
-            executeSearch();
+            executeGetAuthors();
     }
 
-    private void executeSearch(){
+    private void executeGetAuthors(){
         requestStartTime = System.currentTimeMillis();
         cancelRequest = false;
         final LiveData<Resource<List<AuthorModel>>> repositorySource = authorRepository.getAuthorsApi(pageNumber);

@@ -24,9 +24,6 @@ public class AuthorRepository {
     private static AuthorRepository instance;
     private AuthorsDao authorsDao;
 
-
-
-
     public static AuthorRepository getInstance(Context context) {
         if (instance == null) {
             instance = new AuthorRepository(context);

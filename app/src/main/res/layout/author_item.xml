@@ -26,9 +26,9 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:layout_marginLeft="50dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:textSize="20sp"
             android:fontFamily="@font/roboto_bold"
+            android:textStyle="bold"
             android:text="Apple Orange Apple Orange Apple Orange Apple Orange Apple Orange Apple Orange"
             android:layout_toLeftOf="@id/image_url"/>
     </LinearLayout>
